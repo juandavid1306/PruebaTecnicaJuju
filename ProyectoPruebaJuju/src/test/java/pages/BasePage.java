@@ -16,7 +16,7 @@ public class BasePage {
     
     protected static WebDriver driver;
     
-    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
  
     
     static {
@@ -49,6 +49,7 @@ public class BasePage {
     public void clickElement(String locator){
         Find(locator).click();
     }
+
 
     public void write(String locator, String keysToSend){
         Find(locator).clear();
