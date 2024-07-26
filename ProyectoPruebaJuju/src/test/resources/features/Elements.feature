@@ -30,4 +30,17 @@ Feature: Elements
         When I click on Elements and select Buttons
         And I click the buttons: Double click me Right click me and Click me
         Then I can validate the Buttons clicked         
-      
+
+@Escenario5
+    Scenario: Users can select Links from Elements
+        Given I navigate to www.demoqa.com   
+        When I click on Elements and select Links
+        Then I click the different links and I can validate the links clicked
+
+@Escenario6
+    Scenario: Users can select Web Tables from Elements
+        Given I navigate to www.demoqa.com   
+        When I click on Elements and select Web Tables
+        And I click Add button and create a new record
+        Then I can validate the new record    
+               
